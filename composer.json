@@ -1,0 +1,36 @@
+{
+    "name": "pyrech/do-not-expose-your-symfony",
+    "type": "symfony-bundle",
+    "description": "Change some default Symfony configuration to not leak you are using it",
+    "keywords": ["symfony", "hide", "expose"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Loïck Piera",
+            "email": "pyrech@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Pyrech\\DoNotExposeYourSymfony\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Pyrech\\DoNotExposeYourSymfony\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^7.0",
+        "symfony/framework-bundle": "^3.3 || ^4.0"
+    },
+    "require-dev": {
+        "ext-iconv": "*",
+        "symfony/console": "^3.3 || ^4.0",
+        "symfony/form": "^3.3 || ^4.0",
+        "symfony/phpunit-bridge": "^3.3 || ^4.0",
+        "symfony/security-bundle": "^3.3 || ^4.0",
+        "symfony/yaml": "^3.3 || ^4.0",
+        "friendsofphp/php-cs-fixer": "^2.9"
+    }
+}
